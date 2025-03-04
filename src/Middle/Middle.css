@@ -1,0 +1,129 @@
+.middle-section {
+  border-top: 5px solid rgb(183, 180, 180); 
+  width: 90vw;
+  max-width: 480px;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Ensures internal items are centered */
+}
+
+
+/* Additional Centering for Page */
+.page-container {
+  display: flex;
+  justify-content: center; /* Centers the middle section */
+  align-items: center; /* Centers it vertically */
+  /* height: 100vh; Full viewport height */
+}
+
+
+/* Search Bar */
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px 30px 8px 10px;
+  border-radius: 20px;
+  border: 5px solid #ccc;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  width: 16px;
+  height: 16px;
+}
+
+/* Message Icon */
+.message-icon {
+  width: 50px;
+  height: 40px;
+}
+
+.profile-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 530px;
+  padding: 10px;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-pic {
+  width: 50px; 
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.profile-name-time h4 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 16px;
+  margin: 0;
+}
+
+.time-text {
+  font-size: 14px;
+  color: gray;
+}
+
+.profile-name-time p {
+  font-size: 14px;
+  margin: 0;
+  color: gray;
+}
+
+.profile-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.menu-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.connect-icon{
+  width: 120px;
+  height: 30px;
+  cursor: pointer;
+
+}
+
+
+/* Post Section */
+.post-section {
+  padding: 10px;
+  background: white;
+}
+
+.post-image {
+  height: 70vh;
+  width: 50vh;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+
+
+

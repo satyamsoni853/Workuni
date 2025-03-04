@@ -1,0 +1,45 @@
+.profile-card {
+  position: relative;
+  max-width: 500px; /* Full width including small images */
+  height: 500px; /* Adjust height accordingly */
+  display: flex;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  background-color: white;
+  align-items: center;
+  margin: auto;
+  /* border: 1px solid grey; */
+}
+
+.main-image {
+  width: 400px; /* Main image size */
+  /* height: auto; */
+  height: 500px;
+  border-radius: 10px;
+  z-index: 2; /* Keep the main image on top */
+  position: relative;
+}
+
+/* Small Image Styling */
+.overlay-image {
+  position: absolute;
+  width: 50px; /* Small image size */
+  height: 50px;
+  border-radius: 50%;
+  z-index: 1; /* Behind main image */
+}
+
+/* Top 3 Images */
+.top-left { top: 0px; left: 10px; }
+.top-center { top: 0px; left: 50%; transform: translateX(-50%); }
+.top-right { top: 0px; right: 10px; }
+
+/* Right 3 Images */
+.middle-right-top { top: 20%; right: 0px; }
+.middle-right-center { top: 50%; right: 0px; transform: translateY(-50%); }
+.middle-right-bottom { top: 80%; right: 0px; }
+
+/* Bottom 3 Images */
+.bottom-left { bottom: 0px; left: 10px; }
+.bottom-center { bottom: 0px; left: 50%; transform: translateX(-50%); }
+.bottom-right { bottom: 0px; right: 10px; }
