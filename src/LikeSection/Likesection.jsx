@@ -1,23 +1,14 @@
 import React from 'react';
 import './Likesection.css';
+import SmallBackground from '../SmallBack/SmallBackground';
 import likeIcon from "./like-icon.png"; 
 import heartIcon from "./heart-icon.png"; 
 import clapIcon from "./clap-icon.png"; 
-import smallImage1 from "./small-image1.png";
-import smallImage2 from "./small-image2.png";
-import smallImage3 from "./small-image3.png";
-import smallImage4 from "./small-image4.png";
-
 
 function Likesection() {
   return (
     <div className="like-card">
-      {/* Background Small Images */}
-      <img src={smallImage1} alt="Overlay" className="small-img top-left" />
-      <img src={smallImage2} alt="Overlay" className="small-img top-center" />
-      <img src={smallImage3} alt="Overlay" className="small-img top-right" />
-      <img src={smallImage4} alt="Overlay" className="small-img mid-right-top" />
-      
+      <SmallBackground /> {/* Background component */}
 
       {/* Like Content */}
       <div className="like-content">

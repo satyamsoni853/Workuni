@@ -1,45 +1,93 @@
+/* Profile Card - Centered & Responsive */
 .profile-card {
   position: relative;
-  max-width: 500px; /* Full width including small images */
-  height: 500px; /* Adjust height accordingly */
-  display: flex;
+  max-width: 90%; /* Responsive width */
+  width: 470px; /* Default size */
+
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  justify-content: center;
-  background-color: white;
-  align-items: center;
-  margin: auto;
-  /* border: 1px solid grey; */
+  margin: auto; /* Centers the card */
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers child elements */
+  justify-content: center; /* Center content */
+  text-align: center; /* Ensures text is centered */
+  overflow: hidden; /* Prevents extra width issues */
 }
 
+/* Main Image - Adjusting for Perfect Centering */
 .main-image {
-  width: 400px; /* Main image size */
-  /* height: auto; */
-  height: 500px;
+  width: 100%; /* Responsive scaling */
+  max-width: 400px; /* Limits max size */
+  height: auto; /* Maintains aspect ratio */
   border-radius: 10px;
-  z-index: 2; /* Keep the main image on top */
+  object-fit: cover;
+  display: block;
+  margin: 0 auto; /* Ensures centering */
   position: relative;
+  z-index: 2;
 }
 
 /* Small Image Styling */
 .overlay-image {
   position: absolute;
-  width: 50px; /* Small image size */
-  height: 50px;
+  width: 40px; /* Scales for smaller screens */
+  height: 40px;
   border-radius: 50%;
-  z-index: 1; /* Behind main image */
+  z-index: 1;
 }
 
-/* Top 3 Images */
-.top-left { top: 0px; left: 10px; }
-.top-center { top: 0px; left: 50%; transform: translateX(-50%); }
-.top-right { top: 0px; right: 10px; }
+/* Position Adjustments for Small Images */
+.top-left { top: 5px; left: 10px; }
+.top-center { top: 5px; left: 50%; transform: translateX(-50%); }
+.top-right { top: 5px; right: 10px; }
 
-/* Right 3 Images */
 .middle-right-top { top: 20%; right: 0px; }
 .middle-right-center { top: 50%; right: 0px; transform: translateY(-50%); }
-.middle-right-bottom { top: 80%; right: 0px; }
+.middle-right-bottom { bottom: 20%; right: 0px; }
 
-/* Bottom 3 Images */
-.bottom-left { bottom: 0px; left: 10px; }
-.bottom-center { bottom: 0px; left: 50%; transform: translateX(-50%); }
-.bottom-right { bottom: 0px; right: 10px; }
+.bottom-left { bottom: 5px; left: 10px; }
+.bottom-center { bottom: 5px; left: 50%; transform: translateX(-50%); }
+.bottom-right { bottom: 5px; right: 10px; }
+
+/* Background Container - Keeps Images Fixed */
+.background-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+/* Small Background Images */
+.small-bg {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  opacity: 0.3;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .profile-card {
+    width: 95%; /* Adjust width on small screens */
+    padding: 10px;
+  }
+
+  .overlay-image {
+    width: 30px; /* Smaller images for mobile */
+    height: 30px;
+  }
+
+  .main-image {
+    max-width: 100%; /* Take full space */
+  }
+}
+
+/* Prevent Body Overflow */
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}

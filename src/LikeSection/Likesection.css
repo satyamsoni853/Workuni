@@ -1,50 +1,51 @@
 .like-card {
   position: relative;
-  width: 100%;
+  width: 90%; /* More flexible width */
   max-width: 460px;
   background: #fff;
   padding: 20px;
-  /* border-radius: 12px; */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   text-align: start;
   overflow: hidden;
   margin: auto; /* Centering */
+  border-radius: 8px;
 }
 
 /* Small background images */
 .small-img {
   position: absolute;
-  width: 40px; /* Adjust size as needed */
+  width: 40px;
   height: 40px;
   opacity: 0.6;
 }
 
-/* Positions for background images */
+/* Background Image Positions */
 .top-left { top: 10px; left: 10px; }
 .top-center { top: 10px; left: 50%; transform: translateX(-50%); }
 .top-right { top: 10px; right: 10px; }
 .mid-right-top { top: 50px; right: 10px; }
 
-/* Like details */
+/* Like Details */
 .like-details {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 200px;
+  justify-content: space-between; /* Flexible spacing */
+  gap: 20px;
   margin-bottom: 10px;
 }
 
+/* Like Count */
 .like-count {
   font-size: 16px;
   font-weight: bold;
   color: #333;
-  margin: 0;
+  margin: 0; 
 }
 
-/* Emoji icons */
+/* Emoji Icons */
 .emoji-icons {
   display: flex;
-  gap: 18px;
+  gap: 25px;
 }
 
 .emoji-icon {
@@ -52,11 +53,36 @@
   height: 28px;
 }
 
-/* Description text */
+/* Description Text */
 .description {
   font-size: 14px;
   color: #555;
   margin: 0 auto;
   max-width: 90%;
   text-align: start;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .like-card {
+    width: 95%;
+    padding: 15px;
+    margin: auto;
+  }
+
+  .like-details {
+    
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .emoji-icons {
+    justify-content: center;
+  }
+
+  .small-img {
+    width: 30px; /* Scale down small images */
+    height: 30px;
+  }
 }

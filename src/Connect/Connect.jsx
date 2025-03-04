@@ -1,12 +1,13 @@
-import React from 'react'
-
-import profilePic from "./profile.jpeg"; // Replace with your image path
-import connectIcon from "./connect-icon.png"; // Replace with your image path
-import menuIcon from "./menu-icon.png"; // Replace with your image path
+import React from "react";
+import SmallBackground from "../SmallBack/SmallBackground";
+import profilePic from "./profile.jpeg"; 
+import connectIcon from "./connect-icon.png"; 
+import menuIcon from "./menu-icon.png"; 
 
 function Connect() {
   return (
-    <div>
+    <div className="connect-container">
+      <SmallBackground /> {/* Background component */}
       <div className="page-container">
         <div className="middle-section">
           <div className="profile-section">
@@ -27,7 +28,7 @@ function Connect() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Connect
+export default Connect;

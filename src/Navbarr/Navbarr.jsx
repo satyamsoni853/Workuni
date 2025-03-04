@@ -1,14 +1,15 @@
 import React from "react";
 import "./Navbarr.css";
-import profilePic from "./profile.jpeg"; // Replace with your image path
-import messageIcon from "./message-icon.png"; // Replace with your image path
-import searchIcon from "./search-icon.png"; // Replace with your image path
-
-
+import SmallBackground from "../SmallBack/SmallBackground";
+import profilePic from "./profile.jpeg"; 
+import messageIcon from "./message-icon.png"; 
+import searchIcon from "./search-icon.png"; 
 
 const Navbar = () => {
   return (
     <div className="navbar-container">
+      <SmallBackground /> {/* Background images */}
+
       {/* Navbar */}
       <nav className="navbar">
         <img src={profilePic} alt="Profile" className="nav-profile-pic" />
@@ -18,12 +19,6 @@ const Navbar = () => {
         </div>
         <img src={messageIcon} alt="Messages" className="message-icon" />
       </nav>
-
-      {/* Profile Section */}
-     
-
-      {/* Last Full-Width Image */}
-     
     </div>
   );
 };
