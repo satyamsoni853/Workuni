@@ -13,11 +13,10 @@
 
 .navbar-container {
   
-  width: 90vw;
-  max-width: 480px;
+  width: 100%;
   margin: auto;
   background-color: transparent;
-  padding: 10px;
+  /* padding: 10px; */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   /* border-bottom: 2px solid #ddd;  */
 }
@@ -45,14 +44,14 @@
 /* Footer Image Section */
 .last-image-section {
   display: flex;
-  justify-content: center; /* Centers horizontally */
-  align-items: center; /* Centers vertically */
+  justify-content: center; 
+  align-items: center; 
   width: 100%;
 }
 
 .last-image {
   width: 100%;
-  max-width: 500px;
+  
   border-radius: 10px;
   display: block;
 }

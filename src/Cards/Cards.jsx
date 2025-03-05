@@ -15,7 +15,7 @@ import Footer from '../Footer/Footer.jsx'
 import "./Cards.css"; // External CSS for styling
 import Navbar from "../Navbarr/Navbarr";
 import Dextopmiddle from "../Dextopmidlle/Dextopmiddle";
-import Mobilemidle from "../Mobilemiddle/Mobilemidle";
+// import Mobilemidle from "../Mobilemiddle/Mobilemidle";
 
 function Cards() {
   return (

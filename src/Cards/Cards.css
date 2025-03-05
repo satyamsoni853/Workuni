@@ -41,6 +41,12 @@
   border-radius: 8px;
   display: none; /* Hide on desktop */
 }
+.card{
+  width: 89vw;
+  max-width: 480px;
+  border: 2px solid black;
+  margin-right: 20px;
+}
 
 .card1 {
   padding: 15px;
