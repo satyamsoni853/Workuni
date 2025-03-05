@@ -183,7 +183,17 @@
 
 @media (max-width:1024px) {
   .right-colbrate{
-    flex-direction: column;
+    width: 100px;
+    font-size: 8px;
   }
+  .collbrate-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-size: 12px;
+  }
+
   
 }
+
