@@ -126,7 +126,7 @@
 }
 
 
-/* @media (max-width: 600px)  {
+@media (max-width: 600px)  {
   .connect-icon{
     width: 60px;
     height: 20px;
@@ -143,6 +143,6 @@
     border-top: 5px solid rgb(183, 180, 180); 
   }
   
-} */
+}
 
 
