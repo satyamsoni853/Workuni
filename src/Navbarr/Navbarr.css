@@ -1,5 +1,18 @@
 /* Container styling */
+/* Default: Hidden on Desktop */
 .navbar-container {
+  display: none;
+}
+
+/* Visible Only on Mobile (Below 768px width) */
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    display: block;
+  }
+}
+
+.navbar-container {
+  
   width: 90vw;
   max-width: 480px;
   margin: auto;

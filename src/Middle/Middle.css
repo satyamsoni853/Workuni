@@ -1,5 +1,4 @@
 .middle-section {
-  border-top: 5px solid rgb(183, 180, 180); 
   width: 90vw;
   max-width: 480px;
   padding: 10px;
@@ -139,6 +138,9 @@
     height: 20px;
     cursor: pointer;
     margin-right: 10px;
+  }
+  .middle-section{
+    border-top: 5px solid rgb(183, 180, 180); 
   }
   
 }

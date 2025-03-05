@@ -39,6 +39,13 @@
 .card {
   padding: 15px;
   border-radius: 8px;
+  display: none; /* Hide on desktop */
+}
+
+.card1 {
+  padding: 15px;
+  border-radius: 8px;
+  display: block; /* Show on desktop */
 }
 
 /* Right section */
@@ -51,17 +58,19 @@
 
 /* 🚀 Hide Left and Right Columns on Mobile */
 @media (max-width: 768px) {
-  .left-column, .right-column .navbar-container-dextop  {
+  .left-column, .right-column, .navbar-container-dextop {
     display: none; /* Hides left and right sections */
-  }
-  .right-column{
-    display: none;
-  }
-  .navbar-container-dextop{
-    display: none;
   }
 
   .middle-column {
     width: 100%; /* Expands the middle section */
+  }
+
+  .card {
+    display: block; /* Show on mobile */
+  }
+
+  .card1 {
+    display: none; /* Hide on mobile */
   }
 }

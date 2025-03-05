@@ -33,6 +33,7 @@ function Rightsection() {
         <Rightsuggested profileImage={image1} />
         <Rightsuggested profileImage={image2} />
         <Rightsuggested profileImage={image3} />
+        <Rightsuggested profileImage={image3} />
         
 
       </div>

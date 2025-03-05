@@ -1,0 +1,115 @@
+.dextop-profile-card {
+  width: 30vw;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid black;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Profile Header */
+.dextop-profile-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+/* Profile Image */
+.dextop-profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* Profile Details */
+.dextop-profile-details {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* Name, Time & Subtitle in the SAME COLUMN */
+.dextop-profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Name Styling */
+.dextop-profile-name {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Time Styling */
+.dextop-profile-time {
+  color: gray;
+  font-size: 14px;
+}
+
+/* Subtitle (University & Work) */
+.dextop-profile-subtext {
+  font-size: 14px;
+  color: gray;
+}
+
+/* Three-dot Menu */
+.dextop-three-dot-menu {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+/* Middle Image Section */
+.dextop-middle-image-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.dextop-middle-image {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Action Buttons Section */
+.dextop-action-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+/* Right Actions */
+.dextop-right-actions {
+  /* margin-left: 100px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Action Icons */
+.dextop-action-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.dextop-connect-icon{
+  width: 100px;
+}
+
+.dextop-action-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Profile Description */
+.dextop-profile-desc {
+  text-align: start;
+  width: auto;
+}

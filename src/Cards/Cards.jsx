@@ -7,11 +7,14 @@ import LeftSection1 from "../Leftsection-1/Leftsection1";
 import LeftSection2 from "../Leftsection-2/LeftSection2";
 import Dextopnavbarr from "./dextopnavbarr.png";
 
+
 import postImage1 from "./post-image.png";
-import postImage2 from "./post-image2.png";
+// import postImage2 from "./post-image2.png";
 
 import "./Cards.css"; // External CSS for styling
 import Navbar from "../Navbarr/Navbarr";
+import Dextopmiddle from "../Dextopmidlle/Dextopmiddle";
+import Mobilemidle from "../Mobilemiddle/Mobilemidle";
 
 function Cards() {
   return (
@@ -37,16 +40,11 @@ function Cards() {
               <Middle mainImage={postImage1} />
               <Likesection />
             </div>
-            <div className="card">
-              <Connect />
-              <Middle mainImage={postImage2} />
-              <Likesection />
+            <div className="card1">
+              <Dextopmiddle/>
             </div>
-            <div className="card">
-              <Connect />
-              <Middle mainImage={postImage2} />
-              <Likesection />
-            </div>
+            
+           
           </div>
         </div>
 
