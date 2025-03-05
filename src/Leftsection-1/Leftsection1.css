@@ -1,5 +1,7 @@
 /* Left Section */
 .left-section {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+
   width: 35vw;
   max-width: 400px;
   background: linear-gradient(
@@ -12,8 +14,22 @@
   justify-content: flex-start;
   padding: 15px;
   border-radius: 10px;
-  overflow-y: auto; /* Allows scrolling inside left section */
-  max-height: 100vh; /* Prevents overflow beyond viewport */
+  overflow: hidden; /* Prevents scrollbars */
+}
+
+/* Centering Image */
+.centered-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.centered-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* Left Section Container */
@@ -33,15 +49,14 @@
   width: 100%;
 }
 
-/* Event List Container */
+/* Event List */
 .left-event-list {
   display: flex;
   flex-direction: column;
   gap: 15px;
   width: 100%;
-  max-width: 100%;
-  align-items: flex-start; /* Align event list to start */
-  overflow-y: auto; /* Enables scrolling if needed */
+  align-items: flex-start;
+  overflow: hidden; /* No scrollbar */
 }
 
 /* Profile Card */
@@ -49,12 +64,12 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  background-color: #f8eef5;
+  margin-left: 8px;
+
   padding: 10px;
   border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   width: 100%;
-  justify-content: flex-start; /* Align content to start */
+  justify-content: flex-start;
 }
 
 /* Profile Image */
@@ -102,7 +117,7 @@
   text-align: right;
 }
 
-/* Divider before "See All" */
+/* Divider */
 .left-see-all-container {
   width: 100%;
   display: flex;
@@ -126,3 +141,9 @@
   text-align: center;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+  .left-section {
+    display: none; /* Hide on mobile */
+  }
+}
