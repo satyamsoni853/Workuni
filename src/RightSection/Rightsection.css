@@ -4,7 +4,9 @@
   flex-direction: column;
 }
 .right-colbrate {
+  width: auto;
   display: flex;
+  
   background-color: black;
   align-items: center;
   color: white;
@@ -23,8 +25,9 @@
 .right-circleimage-collbrate {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 80px;
+  justify-content: space-evenly;
+  gap: 40px;
+  
 }
 .collbrate-number {
   display: flex;
@@ -34,7 +37,7 @@
   font-size: 20px;
 }
 .right-section {
-  width: 35vw; /* Match width with left-section */
+  max-width:350px ; /* Match width with left-section */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -120,7 +123,7 @@
   border-radius: 10px;
   width: 100%;
   overflow: hidden;
-  gap: 20px;
+  gap: 5px;
 }
 
 /* Small Circular Image */
@@ -176,4 +179,11 @@
   font-size: 14px;
   color: #777;
   cursor: pointer;
+}
+
+@media (max-width:1024px) {
+  .right-colbrate{
+    flex-direction: column;
+  }
+  
 }
