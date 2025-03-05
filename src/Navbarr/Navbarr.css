@@ -13,11 +13,11 @@
 
 .navbar-container {
   
-  width: 90vw;
-  max-width: 480px;
+ 
+  max-width: 450px;
   margin: auto;
   background-color: transparent;
-  border-radius: 10px;
+ 
   padding: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   /* border-bottom: 2px solid #ddd;  */

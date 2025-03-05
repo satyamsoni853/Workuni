@@ -15,9 +15,18 @@ function SmallBackground() {
       <img src={smallImage1} alt="bg1" className="small-bg top-left" />
       <img src={smallImage2} alt="bg2" className="small-bg top-center" />
       <img src={smallImage3} alt="bg3" className="small-bg top-right" />
+      <img src={smallImage1} alt="bg1" className="small-bg top-left" />
+      <img src={smallImage2} alt="bg2" className="small-bg top-center" />
+      <img src={smallImage3} alt="bg3" className="small-bg top-right" />
       <img src={smallImage4} alt="bg4" className="small-bg middle-left" />
       <img src={smallImage5} alt="bg5" className="small-bg middle-right" />
       <img src={smallImage6} alt="bg6" className="small-bg bottom-left" />
+      <img src={smallImage3} alt="bg3" className="small-bg top-right" />
+      <img src={smallImage4} alt="bg4" className="small-bg middle-left" />
+      <img src={smallImage5} alt="bg5" className="small-bg middle-right" />
+      <img src={smallImage6} alt="bg6" className="small-bg bottom-left" />
+      <img src={smallImage7} alt="bg7" className="small-bg bottom-center" />
+      <img src={smallImage8} alt="bg8" className="small-bg bottom-right" />
       <img src={smallImage7} alt="bg7" className="small-bg bottom-center" />
       <img src={smallImage8} alt="bg8" className="small-bg bottom-right" />
     </div>

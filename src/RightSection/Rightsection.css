@@ -1,5 +1,6 @@
 /* Center the Right Section */
 .right-section {
+ 
   width: 35vw; /* Match width with left-section */
   display: flex;
   flex-direction: column;

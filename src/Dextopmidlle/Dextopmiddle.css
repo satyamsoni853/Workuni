@@ -1,3 +1,4 @@
+/* Main Profile Card */
 .dextop-profile-card {
   width: 30vw;
   border-radius: 10px;
@@ -7,6 +8,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin: 0 auto; /* Centers the card */
 }
 
 /* Profile Header */
@@ -22,6 +24,7 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 /* Profile Details */
@@ -31,7 +34,7 @@
   flex-grow: 1;
 }
 
-/* Name, Time & Subtitle in the SAME COLUMN */
+/* Name, Time & Subtitle in the same column */
 .dextop-profile-info {
   display: flex;
   flex-direction: column;
@@ -74,6 +77,7 @@
 .dextop-middle-image {
   max-width: 100%;
   border-radius: 8px;
+  object-fit: cover;
 }
 
 /* Action Buttons Section */
@@ -86,7 +90,6 @@
 
 /* Right Actions */
 .dextop-right-actions {
-  /* margin-left: 100px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -100,7 +103,8 @@
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
 }
-.dextop-connect-icon{
+
+.dextop-connect-icon {
   width: 100px;
 }
 
@@ -112,4 +116,21 @@
 .dextop-profile-desc {
   text-align: start;
   width: auto;
+  font-size: 14px;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* Responsive Fixes */
+@media (max-width: 1024px) {
+  .dextop-profile-card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .dextop-profile-card {
+    width: 100%;
+    padding: 12px;
+  }
 }
