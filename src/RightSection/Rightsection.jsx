@@ -13,7 +13,25 @@ function Rightsection() {
       <div className="right-main-box">
         {/* Profile Card */}
         <div className="right-profile-card">
+          
+          <div className="right-circleimage-collbrate" >
+            
           <img src={image1} alt="Profile" className="right-profile-image" />
+          
+          <div className="colbrate-main" >
+          <div className="collbrate-number" >
+            <p>254</p>
+            <p>579</p>
+          </div>
+          <div className="right-colbrate" >
+            <p>Connect</p>
+            <p>Collaborate</p>
+            
+          </div>
+          
+          </div>
+          
+          </div>
           <h2 className="right-profile-name">Rahul Verma</h2>
           <p className="right-profile-title">Uniisphere</p>
           <p className="right-profile-location">New Delhi, Delhi</p>
@@ -33,7 +51,7 @@ function Rightsection() {
         <Rightsuggested profileImage={image1} />
         <Rightsuggested profileImage={image2} />
         <Rightsuggested profileImage={image3} />
-        <Rightsuggested profileImage={image3} />
+
         
 
       </div>

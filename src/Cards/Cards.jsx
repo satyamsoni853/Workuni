@@ -9,7 +9,8 @@ import Dextopnavbarr from "./dextopnavbarr.png";
 
 
 import postImage1 from "./post-image.png";
-// import postImage2 from "./post-image2.png";
+import postImage2 from "./post-image2.png";
+import Footer from '../Footer/Footer.jsx'
 
 import "./Cards.css"; // External CSS for styling
 import Navbar from "../Navbarr/Navbarr";
@@ -39,6 +40,15 @@ function Cards() {
               <Connect />
               <Middle mainImage={postImage1} />
               <Likesection />
+              
+              <Connect />
+              <Middle mainImage={postImage2} />
+              <Likesection />
+              <Connect />
+              <Middle mainImage={postImage1} />
+              <Likesection />
+              <Footer/>
+              
             </div>
             <div className="card1">
               <Dextopmiddle/>
