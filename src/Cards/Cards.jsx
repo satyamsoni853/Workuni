@@ -2,31 +2,62 @@ import React from "react";
 import Connect from "../Connect/Connect";
 import Middle from "../Middle/Middle";
 import Likesection from "../LikeSection/Likesection";
+import Rightsection from "../RightSection/Rightsection";
+import LeftSection1 from "../Leftsection-1/Leftsection1";
+import LeftSection2 from "../Leftsection-2/LeftSection2";
+import Dextopnavbarr from "./dextopnavbarr.png";
 
-import postImage1 from "./post-image.png"; // Replace with actual image paths
+import postImage1 from "./post-image.png";
 import postImage2 from "./post-image2.png";
-// import postImage3 from "./post-image3.png";
+
+import "./Cards.css"; // External CSS for styling
+import Navbar from "../Navbarr/Navbarr";
 
 function Cards() {
   return (
-    <div className="cards">
-      <div className="card-1">
-        <Connect />
-        <Middle mainImage={postImage1} />
-        <Likesection />
+    <div>
+      {/* Center the image */}
+      <div className="navbar-container-dextop">
+        <img src={Dextopnavbarr} alt="Navbar" className="centered-image" />
       </div>
-      <div className="card-2">
-        <Connect />
-        <Middle mainImage={postImage2} />
-        <Likesection />
-      </div>
-      <div className="card-3">
-        <Connect />
-        <Middle mainImage={postImage2} />
-        <Likesection />
+
+      <div className="main-layout">
+        {/* Left Section */}
+        <div className="left-column">
+          <LeftSection1 />
+          <LeftSection2 />
+        </div>
+
+        {/* Middle Section */}
+        <div className="middle-column">
+          <div className="cards">
+            <div className="card">
+              <Navbar />
+              <Connect />
+              <Middle mainImage={postImage1} />
+              <Likesection />
+            </div>
+            <div className="card">
+              <Connect />
+              <Middle mainImage={postImage2} />
+              <Likesection />
+            </div>
+            <div className="card">
+              <Connect />
+              <Middle mainImage={postImage2} />
+              <Likesection />
+            </div>
+          </div>
+        </div>
+
+        {/* Right Section */}
+        <div className="right-column">
+          <Rightsection />
+        </div>
       </div>
     </div>
   );
 }
+
 
 export default Cards;

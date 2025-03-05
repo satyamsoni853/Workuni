@@ -1,0 +1,128 @@
+/* Left Section */
+.left-section {
+  width: 35vw;
+  max-width: 400px;
+  background: linear-gradient(
+    50deg,
+    rgba(201, 228, 202, 0.5) 50%,
+    rgba(207, 232, 239, 0.2) 50%
+  ); 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 15px;
+  border-radius: 10px;
+  overflow-y: auto; /* Allows scrolling inside left section */
+  max-height: 100vh; /* Prevents overflow beyond viewport */
+}
+
+/* Left Section Container */
+.left-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* Section Title */
+.left-section-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+  width: 100%;
+}
+
+/* Event List Container */
+.left-event-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 100%;
+  align-items: flex-start; /* Align event list to start */
+  overflow-y: auto; /* Enables scrolling if needed */
+}
+
+/* Profile Card */
+.left-profile-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #f8eef5;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  justify-content: flex-start; /* Align content to start */
+}
+
+/* Profile Image */
+.left-profile-image {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Profile Text */
+.left-profile-text {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* Date */
+.left-profile-date {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 2px;
+}
+
+/* Profile Footer */
+.left-profile-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* University */
+.left-profile-university {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Read More */
+.left-profile-read-more {
+  font-size: 14px;
+  color: gray;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: right;
+}
+
+/* Divider before "See All" */
+.left-see-all-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.left-see-all-line {
+  width: 100%;
+  height: 1px;
+  background-color: grey;
+  margin-bottom: 10px;
+}
+
+.left-see-all-text {
+  font-size: 14px;
+  color: grey;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+}
+

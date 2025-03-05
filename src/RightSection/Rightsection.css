@@ -1,0 +1,143 @@
+/* Center the Right Section */
+.right-section {
+  width: 35vw; /* Match width with left-section */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Main Box - Centered */
+.right-main-box {
+  background-color: #f8eef5;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Profile Card - Content Left Aligned */
+.right-profile-card {
+  padding: 20px;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  margin-bottom: 15px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Profile Image */
+.right-profile-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Profile Name */
+.right-profile-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+}
+
+/* Profile Title and Location */
+.right-profile-title,
+.right-profile-location {
+  font-size: 16px;
+  margin: 2px 0;
+  color: #333;
+}
+
+/* Profile Description */
+.right-profile-description {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+  margin-top: 5px;
+}
+
+/* 'See More' Link */
+.right-see-more {
+  color: blue;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Suggested Section */
+.right-suggested {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: start;
+}
+
+/* Suggested People Container */
+.suggested-people {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  overflow: hidden;
+  gap: 20px;
+}
+
+/* Small Circular Image */
+.suggested-profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Text Section */
+.suggested-text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 5px;
+  white-space: nowrap;
+}
+
+/* No gap between p elements */
+.suggested-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Connect Icon */
+.suggested-connect-icon {
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  flex-shrink: 0;
+  margin-left: 80px;
+}
+
+/* Grey Line before "See All" */
+.right-see-all-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.right-see-all-container hr {
+  border: none;
+  height: 1px;
+  background-color: grey;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.right-see-all {
+  font-size: 14px;
+  color: #777;
+  cursor: pointer;
+}

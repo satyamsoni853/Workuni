@@ -1,0 +1,67 @@
+.navbar-container-dextop {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically if needed */
+  width: 100%;
+  padding: 10px 0; /* Optional padding */
+}
+
+.centered-image {
+  max-width: 100%; /* Ensures responsiveness */
+  height: auto; /* Maintains aspect ratio */
+}
+
+.main-layout {
+  display: flex;
+  justify-content: space-between; /* Ensure spacing between left, middle, and right */
+  padding: 20px;
+}
+
+/* Left section */
+.left-column {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin-right: 50px; /* Adds spacing between left and middle */
+}
+
+/* Middle section */
+.middle-column {
+  width: 50%;
+}
+
+/* Cards inside the middle section */
+.cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* Right section */
+.right-column {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin-right: 50px; /* Adds spacing between right and middle */
+}
+
+/* 🚀 Hide Left and Right Columns on Mobile */
+@media (max-width: 768px) {
+  .left-column, .right-column .navbar-container-dextop  {
+    display: none; /* Hides left and right sections */
+  }
+  .right-column{
+    display: none;
+  }
+  .navbar-container-dextop{
+    display: none;
+  }
+
+  .middle-column {
+    width: 100%; /* Expands the middle section */
+  }
+}
